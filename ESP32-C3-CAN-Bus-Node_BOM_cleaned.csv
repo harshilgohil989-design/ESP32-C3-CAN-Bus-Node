@@ -1,0 +1,13 @@
+﻿Designator,Component,Value / Part,Footprint,Quantity,Manufacturer Part Number,Manufacturer,Supplier,Supplier Part Number,Notes / Verification
+C1,Capacitor,0.47 µF,C0603,1,,,,,Confirm voltage rating and dielectric; source BOM does not specify these.
+C2,Capacitor,33 µF,C0603,1,,,,,"Confirm voltage rating, capacitance suitability, and package; 33 µF in 0603 needs careful part selection."
+C3,Capacitor,0.1 µF,C0603,1,,,,,Confirm voltage rating and dielectric.
+C4,Capacitor,100 nF,C0603,1,,,,,Confirm voltage rating and dielectric.
+D1,TVS protection diode,PTVS24V,SOD-128_L3.7-W2.5-LS4.7-RD,1,PTVS24VP1UTP-QX,Nexperia,LCSC,C20235908,Verify standoff/clamping voltage and suitability for the intended input supply.
+F1,Fuse,2 A,1808,1,0466002.NRHF,,LCSC,C3105,"Verify fuse package, voltage rating, and time-current characteristic."
+"H1, H2",2-pin header / connector,"2-pin, 2.54 mm pitch",HDR-TH_2P-P2.54-V-M,2,PREC002SAAN-RC,Sullins,LCSC,C3330672,Source BOM groups H1 and H2 under one row; verify connector role and orientation.
+R1,Termination resistor,120 Ω,R0603,1,,,,,Confirm power rating and whether termination should be populated for the intended CAN bus position.
+U1,ESP32-C3-WROOM module,ESP32-C3-WROOM-02-N4,BULETM-SMD_ESPRESSIF_ESP32-C3-WROOM-02-N4-4MB,1,ESP32-C3-WROOM-02-N4,Espressif,LCSC,C2934560,Confirm exact module variant and antenna keep-out against the datasheet.
+U2,CAN transceiver,VP230 (as listed in source BOM),SOIC-8_L5.0-W4.0-P1.27-LS6.1-BL,1,,,,,Exact manufacturer part number is missing. Confirm the actual transceiver and pinout before ordering.
+U3,Adjustable buck regulator,LM2596-ADJ,COMM-SMD_LM2596HVS-ADJ,1,,,,,"Source BOM has no exact manufacturer part number. Verify the selected IC, footprint, inductor, diode, and required capacitors; the inductor/diode may be missing from this BOM."
+U4,3.3 V regulator,LM3940IT-3.3,TO-220-3_L10.0-W4.5-P2.54-L,1,LM3940IT-3.3,Texas Instruments,LCSC,C139336,"Confirm input/output capacitor requirements, current/thermal limits, and package pinout."
